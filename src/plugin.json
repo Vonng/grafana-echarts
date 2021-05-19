@@ -1,12 +1,12 @@
 {
   "type": "panel",
   "name": "Echarts",
-  "id": "bilibala-echarts-panel",
+  "id": "vonng-echarts-panel",
   "info": {
     "description": "Echarts panel for grafana",
     "author": {
-      "name": "Bilibala",
-      "url": "https://github.com/Billiballa"
+      "name": "Vonng",
+      "url": "https://github.com/Vonng"
     },
     "keywords": [
       "echarts"
@@ -18,11 +18,11 @@
     "links": [
       {
         "name": "Website",
-        "url": "https://github.com/Billiballa/grafana-echarts"
+        "url": "https://github.com/Vonng/grafana-echarts"
       },
       {
         "name": "License",
-        "url": "https://github.com/Billiballa/grafana-echarts/blob/master/LICENSE"
+        "url": "https://github.com/Vonng/grafana-echarts/blob/master/LICENSE"
       }
     ],
     "screenshots": [],

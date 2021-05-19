@@ -1,5 +1,6 @@
 # Grafana Echarts Panel
 
+
 Echarts panel for grafana 6+ & 7+, coding with react.
 
 Code editor is attached in the edit panel to configure the option of [Apache ECharts (incubating)](https://github.com/apache/incubator-echarts).
@@ -7,6 +8,19 @@ Code editor is attached in the edit panel to configure the option of [Apache ECh
 Support [echarts-wordcloud](https://github.com/ecomfe/echarts-wordcloud), [echarts-liquidfill](https://github.com/ecomfe/echarts-liquidfill) and [echarts-gl](https://github.com/ecomfe/echarts-gl).
 
 ![image](https://github.com/Billiballa/grafana-echarts/blob/master/doc/screenshot.png)
+
+
+
+## COPYRIGHT NOTICE
+
+This plugins was fork from [Bilibala](https://github.com/Billiballa/bilibala-echarts-panel)
+
+Changing Author is only for the convience of project mangement.
+
+All copyright belongs to origin author. Thanks for his brilliant work!
+
+
+
 
 ## How Use
 

@@ -1,6 +1,6 @@
 {
-  "name": "bilibala-grafana-echarts",
-  "version": "2.2.3",
+  "name": "vonng-grafana-echarts",
+  "version": "2.2.4",
   "description": "Echarts panel for grafana",
   "scripts": {
     "build": "grafana-toolkit plugin:build",
@@ -11,12 +11,12 @@
     "docker:6": "docker run -d --rm -p 3001:3000 -v \"$(pwd)\":/var/lib/grafana/plugins/grafana-echarts --name=grafana6 grafana/grafana:6.3.0",
     "zip": "zip grafana-echarts.src.zip . -r -x \"node_modules/*\" -x \".git/*\""
   },
-  "repository": "github:Billiballa/grafana-echarts",
-  "author": "Bilibala",
+  "repository": "github:Vonng/grafana-echarts",
+  "author": "Vonng",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Billiballa/grafana-echarts/issues",
-    "email": "wangqianxiang@outlook.com"
+    "url": "https://github.com/Vonng/grafana-echarts/issues",
+    "email": "fengruohang@outlook.com"
   },
   "devDependencies": {
     "@grafana/data": "^7.0.0",
@@ -36,6 +36,6 @@
     "lodash": "^4.17.20"
   },
   "engines": {
-    "node": ">=12 <13"
+    "node": ">=12 <16"
   }
 }
