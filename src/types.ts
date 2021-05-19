@@ -1,6 +1,30 @@
 export const funcParams = 'data, theme, echartsInstance, echarts';
 
-const funcBody = `const series = data.series.map((s) => {
+const funcBody = `
+function parse_grafana_data(d) {
+  var rawData = []
+  if (data.series[0].fields[0].values.buffer === undefined) {
+      rawData = d.series[0].fields.map((e) => {
+          return e.values
+      })
+  } else { // large dataset will have their data inside a buffer
+      rawData = d.series[0].fields.map((e) => {
+          return e.values.buffer
+      })
+  }
+  var nDim = rawData.length
+  var nItem = rawData[0].length
+  var result = []
+  for (var i = 0; i < nItem; i++) {    // item
+      result[i] = []
+      for (var j = 0; j < nDim; j++) {  // dimension
+          result[i][j] = rawData[j][i]
+      }
+  }
+  return result
+}
+
+const series = data.series.map((s) => {
   const sData = s.fields.find((f) => f.type === 'number').values.buffer;
   const sTime = s.fields.find((f) => f.type === 'time').values.buffer;
 
